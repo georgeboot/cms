@@ -1,0 +1,120 @@
+<?php //$this->render('header.phtml');?>
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<title>Spider CMS | Power to the web</title>
+		<meta name="description" content="Spider CMS - Power to the web">
+		<link href="/media/css/bootstrap.css" rel="stylesheet">
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="/media/js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container-fluid">
+					<a class="brand" href="#"> Spider CMS </a>
+					<ul class="nav">
+						<li class="divider-vertical"></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Website <b class="caret"></b> </a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Beginpagina</a>
+								</li>
+								<li>
+									<a href="#">Account</a>
+								</li>
+								<li>
+									<a href="#">Informatie</a>
+								</li>
+								<li class="divider"></li>
+								<li class="nav-header">
+									Instellingen
+								</li>
+								<li>
+									<a href="#">Website</a>
+								</li>
+								<li>
+									<a href="#">Webserver</a>
+								</li>
+								<li>
+									<a href="#">E-mail</a>
+								</li>
+							</ul>
+						</li>
+						<li class="divider-vertical"></li>
+						<li><a href="#">Item 2</a></li>
+						<li class="divider-vertical"></li>
+						<li><a href="#">Modules</a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a href="#">Widgets</a></li>
+                        <li class="divider-vertical"></li>
+					</ul>
+					<ul class="nav pull-right">
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a href="#">Ingelogd als: George Boot</a>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a href="#">Profiel</a>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a href="#">Uitloggen</a>
+                        </li>
+                    </ul>
+                    <form class="navbar-search pull-right">
+						<input type="text" class="search-query" placeholder="Zoeken...">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" style="margin-top:40px;">
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="page-header">
+					   <h1>Spider CMS <small>power to the web</small></h1>
+					</div>
+				</div>
+			</div>
+			<div class="row-fluid">
+    			<div class="span6">
+    			    <h2>Header 2</h2>
+    			    <p>Welkom op mijn zo ontzettend gave CMS demo!</p>
+    			</div>
+    			<div class="span6">
+    				<h2>Encryption <small>We use BlowFish to secure save your data</small></h2>
+    				<p>Hier de beschrijving voor encryptie</p>
+    				<div class="tabbable">
+    					<ul class="nav nav-tabs">
+    						<li class="active">
+    							<a href="#1" data-toggle="tab">Normal</a>
+    						</li>
+    						<li>
+    							<a href="#2" data-toggle="tab">Encrypted</a>
+    						</li>
+    					</ul>
+    					<div class="tab-content">
+    						<div class="tab-pane active" id="1">
+    							<p>
+    								<?php echo htmlentities($this -> encryption['before']);?>
+    							</p>
+    						</div>
+    						<div class="tab-pane" id="2">
+    							<p>
+    								<?php echo htmlentities($this -> encryption['on']);?>
+    							</p>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+			</div>
+			<hr />
+			<footer class="footer">
+				<p>&copy; 2012 George Boot Holding Ltd.</p>
+			</footer>
+		</div>
+	</body>
+</html>
