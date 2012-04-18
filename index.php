@@ -1,6 +1,6 @@
 <?php
 
-use Cms;
+use \Cms;
 
 /** + DEBUG **/
 error_reporting(E_ALL);
