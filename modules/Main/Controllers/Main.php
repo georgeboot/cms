@@ -3,7 +3,8 @@
 namespace Main;
 
 use \Cms\FrontController,
-    \Cms\Encryption;
+    \Cms\Encryption,
+    \Cms\Database;
 
 final class MainController extends \Cms\FrontController
 {
@@ -28,6 +29,11 @@ final class MainController extends \Cms\FrontController
     public function testAction ()
     {
         echo 'dit is de test action';
+    }
+    
+    public function dbAction ()
+    {
+        $db = Factory::getMysqlInstance();
     }
 }
 

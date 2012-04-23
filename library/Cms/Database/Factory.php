@@ -16,4 +16,9 @@ class Factory
 		if (null === self::$_instance) self::$_instance = new self();
 		return self::$_instance;
 	}
+    
+    public static function getMysqlInstance ()
+    {
+        return new Cms\Database\Adapter\Pdo\Pdo;
+    }
 }
