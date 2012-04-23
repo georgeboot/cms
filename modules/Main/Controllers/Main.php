@@ -34,6 +34,8 @@ final class MainController extends \Cms\FrontController
     public function dbAction ()
     {
         $db = Factory::getMysqlInstance();
+        
+        print_r($db);
     }
 }
 
