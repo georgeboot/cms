@@ -28,7 +28,7 @@ class Router
     {
         $this->_raw = explode('/', substr($_SERVER['REQUEST_URI'], 1));
         $this->_module        = (!empty($this->_raw[0])) ? $this->_raw[0] : 'Main';
-        $this->_controller    = (!empty($this->_raw[1])) ? $this->_raw[0] : 'Main';
-        $this->_action        = (!empty($this->_raw[2])) ? $this->_raw[1] : 'index';
+        $this->_controller    = (!empty($this->_raw[1])) ? $this->_raw[1] : 'Main';
+        $this->_action        = (!empty($this->_raw[2])) ? $this->_raw[2] : 'index';
     }
 }
